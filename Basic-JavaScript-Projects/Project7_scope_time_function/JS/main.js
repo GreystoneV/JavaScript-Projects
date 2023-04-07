@@ -61,3 +61,20 @@ function guessGame() {
         document.getElementById("result").innerHTML += "Player!";
     }
 }
+
+// Step151
+// Gets the hour of the day and compares it to some numbers. It will display if it is morning afternoon or evening.
+function timeFunction() {
+    var Time = new Date().getHours();
+    var Reply;
+    if (Time < 12 == Time > 0) {
+        Reply = "It is morning time!";
+    }
+    else if (Time >= 12 == Time < 18) {
+        Reply = "It is afternoon.";
+    }
+    else {
+        Reply = "It is evening time.";
+    }
+    document.getElementById("timeOfDay").innerHTML = Reply;
+}
