@@ -33,3 +33,37 @@ var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
 function myFunction() {
     document.getElementById("keywordsAndConstructors").innerHTML = "Eric drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year;
 }
+// Step 134 utilize the new keyword
+var Ben = new Vehicle("Toyota", "Tundra", 2016, "Blue")
+function someFunc() {
+    document.getElementById("newAndThis").innerHTML = "Ben drives a " + Ben.Vehicle_Color + "-colored " + Ben.Vehicle_Make + " " + Ben.Vehicle_Model + " manufactured in " + Ben.Vehicle_Year + ".";
+}
+// Step 136 try to assign the value of reserved word. Commented out because it broke the script.
+// var x = in;
+// write and object constructor function
+function Student(Name, grade, year) {
+    this.name = Name;
+    this.grade = grade;
+    this.year = year;
+}
+// initilizes object James and displays values
+var James = new Student("James", "A", "Freshmen");
+document.write(`${James.name} ${James.grade} ${James.year}`);
+
+// Step 139 
+// Nested function gets input from use. If number is below 100 then it will add 1 and return number else it will tell you to pick a smaller number
+function input() {
+    function add(num) {
+        num++;
+        return document.getElementById("nestedFunction").innerHTML = num;
+    }
+    var num, canAdd;
+    num = document.getElementById("num").value;
+    canAdd = (num < 100)
+    if (canAdd === true) {
+        add(num);
+    }
+    else {
+        return document.getElementById("nestedFunction").innerHTML = "Sorry, pick a number under 100."
+    }
+}
