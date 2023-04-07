@@ -1,3 +1,4 @@
+
 // window.alert("Hello World!");
 document.write("Hello world! ")
 var A = "This is a string. ";
@@ -19,4 +20,9 @@ document.write(math);
 function My_First_Function() {
     var str = "This is the button text!";
     document.getElementById("Button_Text").innerHTML = str;
+}
+//I wonder why this blocks all the other text. I tried putting it at the top of the file thinking it might be a control flow issue but that did not seem to help.
+function first_pop_up() {
+    var hello_again = "Welcome back to our site!";
+    document.write(hello_again);
 }
