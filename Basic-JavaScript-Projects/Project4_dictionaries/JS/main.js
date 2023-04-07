@@ -8,7 +8,9 @@ function myDictionary() {
         Age: 5,
         Sound: "Bark!"
     };
+    // delete KVP under k Age
     delete Animal.Age;
+    // Display Animal.Sound
     document.getElementById("Dictionary").innerHTML = Animal.Sound;
 
 }
