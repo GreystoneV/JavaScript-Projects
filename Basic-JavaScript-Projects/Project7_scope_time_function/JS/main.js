@@ -25,3 +25,39 @@ function check() {
         document.getElementById('time').innerHTML = "Something went so very very wrong!"
     }
 }
+
+// Step 147 function to check what is greater among the arguments given
+function checkLength(n1, n2) {
+    if (n1 > n2) {
+        document.write(n1);
+    }
+    else if (n1 === n2) {
+        document.write(`${n1} ${n2}!`);
+    }
+    else {
+        document.write(n2);
+    }
+}
+
+var num1 = 14;
+var num2 = 14;
+checkLength(num1, num2);
+
+// Step 149
+// Takes user input from html. computer randomly pick number between 1 and 10. Function compares and displays who had the hight number.
+function guessGame() {
+    var guess, compGuess;
+    guess = document.getElementById('uInput').value;
+    console.log(guess);
+    compGuess = Math.round(Math.random() * 10);
+    console.log(compGuess);
+    if (compGuess > guess) {
+        document.getElementById("result").innerHTML += "Computer!";
+    }
+    else if (compGuess == guess) {
+        document.getElementById("result").innerHTML += "Tie!";
+    }
+    else {
+        document.getElementById("result").innerHTML += "Player!";
+    }
+}
