@@ -24,6 +24,7 @@ var Y;
 // It's weird to not have to pass in variables to the functions. Is this normal? I'm used to having to declare a variable global.
 // Doesn't having every variable outside functions be global, create issues? Or do you just have to be more careful with naming conventions? 
 // HA! Step 212 answered my question :) const
+// And even more on step 214
 function forLoop() {
     for (Y = 0; Y < Instruments.length; Y++) {
         Content += Instruments[Y] + "<br>";
@@ -53,3 +54,13 @@ function constantFunction() {
     document.getElementById("newConstant").innerHTML += someDict["10"];
     document.getElementById("addedConstant").innerHTML += someDict["2"];
 }
+
+// step 215
+// showing how let allows a variable to be available within a certain scope
+var x = 10;
+let y = 10;
+for (y = 0; y < x; y++) {
+    let z = 10
+    document.getElementById("z").innerHTML = z;
+}
+// console.log(x, y, z); Commented out because z returns undefined in colsole
