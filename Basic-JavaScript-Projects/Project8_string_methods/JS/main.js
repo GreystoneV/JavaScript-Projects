@@ -35,3 +35,14 @@ function precisionMethod() {
     var x = 1234.5678987654321;
     document.getElementById("precision").innerHTML = x.toPrecision(10);
 }
+// Step 165
+// use tofixed method and value of method
+// to fixed counts after decimal point and precision is total places
+function morePrecision() {
+    var x = 12.34567890
+    document.getElementById("fixed").innerHTML = x.toFixed(2);
+}
+function valuedType() {
+    var x = "seventy times"
+    document.getElementById("value").innerHTML = x.valueOf();
+}
