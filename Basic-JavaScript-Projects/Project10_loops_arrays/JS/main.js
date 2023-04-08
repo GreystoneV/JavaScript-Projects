@@ -75,4 +75,14 @@ function hungry() {
 result = hungry();
 document.getElementById("return").innerHTML += result;
 
-// 
+// Step 221 
+// Create and object with let. Object method returns a description of the values of itself
+let house = {
+    type: "Bungalo",
+    year: 1990,
+    sqft: 3000,
+    listing: function () {
+        return `This ${this.type} was built in ${this.year}. It has ${this.sqft} square feet.`;
+    }
+};
+document.getElementById("houseObj").innerHTML = house.listing();
