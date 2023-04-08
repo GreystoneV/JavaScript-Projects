@@ -21,3 +21,17 @@ var x = "hello there friend";
 document.write(x.toUpperCase())
 var pos = x.search("friend");
 document.write(pos);
+
+// Step 162
+// converts number to string
+function stringMethod() {
+    var x = 182;
+    document.getElementById("numbersToString").innerHTML = x.toString();
+}
+
+// step 164 
+// function writes the variable out to the number of digits passed into toPrecision
+function precisionMethod() {
+    var x = 1234.5678987654321;
+    document.getElementById("precision").innerHTML = x.toPrecision(10);
+}
