@@ -1,3 +1,22 @@
+// step 169 
+// Function uses input from the user to start and display a timer. When time ends, an alert will pop up
+
+function countdown() {
+    var seconds = document.getElementById("seconds").value;
+
+    function tick() {
+        seconds = seconds - 1;
+        timer.innerHTML = seconds;
+        var time = setTimeout(tick, 1000);
+        if (seconds == -1) {
+            alert("Time's up!");
+            clearTimeout(time);
+            timer.innerHTML = '';
+        }
+    }
+    tick();
+}
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
