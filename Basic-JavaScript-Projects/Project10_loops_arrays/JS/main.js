@@ -23,6 +23,7 @@ var Content = "";
 var Y;
 // It's weird to not have to pass in variables to the functions. Is this normal? I'm used to having to declare a variable global.
 // Doesn't having every variable outside functions be global, create issues? Or do you just have to be more careful with naming conventions? 
+// HA! Step 212 answered my question :) const
 function forLoop() {
     for (Y = 0; Y < Instruments.length; Y++) {
         Content += Instruments[Y] + "<br>";
@@ -40,4 +41,15 @@ animals[3] = "Fish";
 
 function arrayFunction() {
     document.getElementById("array").innerHTML = animals;
+}
+
+// Step 213
+// Function creates object, adds to it and changes a value. 
+function constantFunction() {
+    const someDict = { "10": "Decimal" };
+    document.getElementById("Constant").innerHTML += someDict["10"];
+    someDict["2"] = "Binary";
+    someDict["10"] = "Still Decimal";
+    document.getElementById("newConstant").innerHTML += someDict["10"];
+    document.getElementById("addedConstant").innerHTML += someDict["2"];
 }
