@@ -10,3 +10,8 @@ function callLoop() {
     }
 
 }
+
+function callLength() {
+    let x = "Hello Friend!";
+    document.getElementById("length").innerHTML += x.length;
+}
