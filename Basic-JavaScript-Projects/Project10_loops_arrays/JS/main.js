@@ -56,7 +56,7 @@ function constantFunction() {
 }
 
 // step 215
-// showing how let allows a variable to be available within a certain scope
+// showing how let allows a variable to be available within a certain scope "Block Scope"
 var x = 10;
 let y = 10;
 for (y = 0; y < x; y++) {
@@ -64,3 +64,15 @@ for (y = 0; y < x; y++) {
     document.getElementById("z").innerHTML = z;
 }
 // console.log(x, y, z); Commented out because z returns undefined in colsole
+
+// Step 218
+// function returns x to the variable result
+function hungry() {
+    var x = Math.PI.toFixed(5);
+    return x;
+}
+
+result = hungry();
+document.getElementById("return").innerHTML += result;
+
+// 
