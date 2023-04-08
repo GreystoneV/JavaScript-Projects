@@ -86,3 +86,17 @@ let house = {
     }
 };
 document.getElementById("houseObj").innerHTML = house.listing();
+
+// Step 222
+// break statement can be used to terminate a loop
+// loop adds kvp into dict1. The loop should run until y = 4 but it gets stopped buy the break because it was equal to 3
+i = 4;
+var dict1 = {}
+for (y = 0; y < i; y++) {
+    if (y == 3) {
+        break;
+    }
+    dict1[y] = i;
+    console.log(dict1);
+}
+
