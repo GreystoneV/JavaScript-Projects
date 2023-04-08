@@ -15,3 +15,9 @@ function sliceMethod() {
     var Section = Sentence.slice(26, 35);
     document.getElementById("slice").innerHTML = Section;
 }
+
+// Step 160 utilize the search and touppercase method
+var x = "hello there friend";
+document.write(x.toUpperCase())
+var pos = x.search("friend");
+document.write(pos);
