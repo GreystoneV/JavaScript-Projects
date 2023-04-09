@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form Challenge</title>
+    <script src="./JS/main_2.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="./CSS/CSS_1.css">
+</head>
+
+<body>
+    <div id="contactForm">
+        <h2>HTML Forms</h2>
+        <form name="myForm" action="https://formspree.io/f/mrgvynjk" method="POST" onsubmit="return validateForm()">
+            <label">First name:</label><br>
+                <input type="text" id="fname" placeholder="First Name" required><br>
+                <label>Last name:</label><br>
+                <input type="text" id="lname" placeholder="Last Name" required><br><br>
+                <label>Your message:<br><textarea id="msgBox" name="message" required></textarea></label><br><br>
+                <input type="submit" id='msg' value="Submit"><br>
+        </form>
+        <p id="explination">If you click the "Submit" button, the form-data will be sent to my email.</p>
+    </div>
+</body>
+
+</html>
